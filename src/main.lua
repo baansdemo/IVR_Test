@@ -2,9 +2,9 @@
 -- coverage: 0
 channel.answer()
 
-local assets = require("summit.asset")
+local asset = require("summit.asset")
 
-channel.play("assets/sounds/Titanic.wav")
+channel.play("asset://sounds/Titanic.wav")
 
 function demofunction()
 --channel.play("assets://sounds/Titanic.wav")
@@ -13,7 +13,7 @@ channel.say("Thank you for choosing us. Please press 1 to listen again and 2 to 
 local digit = channel.gather()
 
 if digit == '1' then
-	print(demofunction())
+	demofunction()
 
 else if digit == '2' then
 
@@ -24,4 +24,4 @@ end
 channel.hangup()
 end
 
-print(demofunction())
+demofunction()
