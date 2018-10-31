@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks":true,
+			"path": "C:\\Summit_Apps\\IVR_Test"
+		}
+	],
+	"build_path":"C:\\Summit_Apps\\IVR_Test",
+	"application_id": "f90de418-91ec-4f7f-a369-d1f0f5bb1766",
+	"api_key": "TwuMvLnkRih2jJqg3BOoZcC",
+	"api_secret": "9MW3Y.Alq2jO6CZaRcXk/L=EesTPv!",
+	"use_live_datastore": "true"
+}
