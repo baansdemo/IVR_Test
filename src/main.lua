@@ -4,7 +4,7 @@ channel.answer()
 
 local asset = require("summit.asset")
 
-channel.play("asset://sounds/Titanic.wav")
+channel.play("asset://sounds/1_FollowingStatementsListenClosely.wav")
 
 function demofunction()
 --channel.play("assets://sounds/Titanic.wav")
