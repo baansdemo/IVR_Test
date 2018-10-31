@@ -1,9 +1,27 @@
 -- This comment enforces unit-test coverage for this file:
 -- coverage: 0
-
 channel.answer()
-channel.say("This is an example application. Enter any number followed by the pound sign.")
-local digits = channel.gather()
-channel.say(digits)
-channel.hangup()
 
+local assets = require("summit.asset")
+
+channel.play("assets://sounds/Titanic.wav")
+
+function demofunction()
+--channel.play("assets://sounds/Titanic.wav")
+channel.say("Thank you for choosing us. Please press 1 to listen again and 2 to talk to our expert.")
+
+local digit = channel.gather()
+
+if digit == '1' then
+	print(demofunction())
+
+else if digit == '2' then
+
+else 
+channnel.say("Please press either 1 or 2.")
+end
+end
+channel.hangup()
+end
+
+print(demofunction())
